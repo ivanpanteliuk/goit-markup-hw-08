@@ -1,0 +1,16 @@
+.logo {
+    @extend %a;
+    color: $accent-color;
+    font-family: $logo-font-stack;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+}
+
+.logo__text {
+    color: $logo-color;
+
+    &--inverted {
+        color: $white-color;
+    }
+}

@@ -1,0 +1,47 @@
+.subscribe__text {
+    @extend %p;
+
+    display: block;
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $white-color;
+}
+
+.subscribe {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.subscribe__input {
+    display: block;
+    width: 358px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--hero-footer-background-color);
+    color: $subscribe-input-color;
+
+    &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            color: $subscribe-input-color;
+        }
+}
+
+.subscribe__button {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe__button-icon {
+    margin-left: 10px;
+    fill: $white-color;
+}

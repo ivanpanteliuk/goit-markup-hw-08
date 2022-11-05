@@ -1,0 +1,21 @@
+.team {
+    @extend %section;
+
+    background-color: $our-team-section-background;
+}
+
+.team__title {
+    @extend %h2;
+    @extend %section-title;
+
+    margin-bottom: 50px;
+}
+
+.team__list {
+    @extend %ul;
+
+    display: flex;
+    flex-basis: calc((100% - 90px) / 4);
+    gap: 30px;
+}
+

@@ -1,0 +1,78 @@
+.portfolio__filter {
+    margin-bottom: 50px;
+}
+
+.portfolio__list {
+    @extend %ul;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio__card {
+    @extend %a;
+
+    display: block;
+
+    transition: box-shadow $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+    &:hover .portfolio__overlay-text,
+    &:focus .portfolio__overlay-text {
+        transform: translateY(0);
+    }
+}
+
+.portfolio__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__overlay-text {
+    @extend %p;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+
+    background-color: $portfolio-overlay-bg;
+    font-size: 18px;
+    line-height: 1.5555;
+    color: $white-color;
+
+    transform: translateY(100%);
+    transition: transform $transition-duration $transition-timing-function;
+}
+
+.portfolio__title {
+    @extend %h2;
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+    margin-bottom: 4px;
+}
+
+.portfolio__text {
+    @extend %p;
+
+    font-size: 16px;
+    line-height: 1.875;
+}
+
+.portfolio__container {
+    padding: 20px 24px;
+
+    border-bottom: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+}

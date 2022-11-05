@@ -1,0 +1,52 @@
+.footer {
+    @extend %section;
+
+    background-color: $hero-footer-background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    display: block;
+   
+}
+
+.footer__list {
+    @extend %ul;
+}
+
+.footer__address {
+    font-style: normal;
+    color: $primary-text-color;
+}
+
+.footer__link {
+    @extend %a;
+
+    display: inline-block;
+
+    min-width: 231px;
+    color: $white-color;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__social-text {
+    @extend %p;
+
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white-color;
+    }

@@ -1,0 +1,22 @@
+.close-modal-btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $white-color;
+}
+
+.close-modal-btn__icon {
+    transition: fill $transition-duration $transition-timing-function;
+}
+
+.close-modal-btn:hover .close-modal-icon,
+.close-modal-btn:focus .close-modal-icon {
+    fill: $accent-color;
+}
