@@ -1,6 +1,10 @@
 .services {
     @extend %section;
+    display: none;
+
+    
 }
+
 
 .services__title {
     @extend %h2;

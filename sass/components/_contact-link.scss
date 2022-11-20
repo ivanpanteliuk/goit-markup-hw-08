@@ -1,7 +1,7 @@
 .contact-link {
   @extend %a;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   color: $primary-text-color;
@@ -16,6 +16,15 @@
     & .contact-link__icon {
         fill: currentColor;
     }
+
+  }
+  @media (min-width: 768px) {
+    // display: block;
+  }
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.6666;
   }
 }
 

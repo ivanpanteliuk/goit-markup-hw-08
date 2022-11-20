@@ -9,13 +9,23 @@
     @extend %section-title;
 
     margin-bottom: 50px;
+    
 }
 
 .team__list {
     @extend %ul;
 
-    display: flex;
-    flex-basis: calc((100% - 90px) / 4);
-    gap: 30px;
+    // display: flex;
+    // flex-basis: calc((100% - 90px) / 4);
+    // gap: 30px;
+}
+
+.team__item {
+    
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;    
+        }
+    }
 }
 

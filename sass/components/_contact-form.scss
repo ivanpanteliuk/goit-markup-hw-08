@@ -88,6 +88,8 @@
 
 .contact-form__checkbox-link {
     color: $accent-color;
+    font-size: 12px;
+    line-height: 1.6666;
 }
 
 .contact-form__checkbox-icon {
@@ -104,6 +106,12 @@
         background-color $transition-duration $transition-timing-function;
 }
 
+.contact-form__checkbox-text {
+    font-size: 12px;
+    line-height: 1.6666;
+
+}
+
 .contact-form__checkbox-input:checked+.contact-form__checkbox-icon {
     border-color: $accent-color;
     background-color: $accent-color;
@@ -115,4 +123,5 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 52px;
 }

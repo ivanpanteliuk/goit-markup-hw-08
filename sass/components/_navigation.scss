@@ -1,11 +1,16 @@
 .navigation {
     @extend %ul;
 
-    display: flex;
+    display: none;
     
     font-weight: 500;
     line-height: 1.1428;
     letter-spacing: 0.02em;
+
+    @media (min-width: 768px) {
+        display: flex;
+        
+    }
 }
 
 .navigation__item {

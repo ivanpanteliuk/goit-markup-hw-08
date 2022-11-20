@@ -10,14 +10,16 @@
 }
 
 .subscribe {
-    display: flex;
+    // display: flex;
     gap: 12px;
     align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .subscribe__input {
     display: block;
-    width: 358px;
+    width: 100%;
 
     padding-top: 15px;
     padding-bottom: 15px;
@@ -34,11 +36,18 @@
             line-height: 1.25;
             color: $subscribe-input-color;
         }
+
+@media (max-width: 1199px) {
+    margin-bottom: 20px;
+}
 }
 
 .subscribe__button {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 28px;
 }
 
 .subscribe__button-icon {

@@ -15,11 +15,14 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .clients__item {
-    width: 170px;
+    // width: 170px;
     height: 92px;
+
+    width: calc((100% - 30px) / 2);
 }
 
 .clients__link {

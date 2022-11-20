@@ -14,6 +14,16 @@
           <a href="./index.html" lang="en" class="logo header__logo"
             >Web<span class="logo__text">Studio</span>
           </a>
+          <button
+            class="header__burger-menu js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
           <ul class="navigation">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link navigation__link--current"> Студія </a>
@@ -57,7 +67,7 @@
           <ul class="benefits__list">
             <li class="benefits__item">
               <div class="benefits__icon-container">
-                <svg widht="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -68,7 +78,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__icon-container">
-                <svg widht="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -79,7 +89,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__icon-container">
-                <svg widht="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -90,7 +100,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__icon-container">
-                <svg widht="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -143,13 +153,22 @@
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
-            <li>
+            <li class="team__item">
               <div class="employee-card">
-                <img
-                  src="./images/img1.jpg"
-                  alt="Бородатий чоловік в бордовій сорочці і окулярах посміхається"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/product-designer-mobile.jpg    1x,
+                      ./images/product-designer-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/product-designer-desktop.jpg"
+                    alt="Бородатий чоловік в бордовій сорочці і окулярах посміхається"
+                  />
+                </picture>
                 <div class="employee-card__container">
                   <h3 class="employee-card__title">Ігор Дем'яненко</h3>
                   <p lang="en" class="employee-card__text">Product Designer</p>
@@ -186,13 +205,21 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <div class="employee-card">
-                <img
-                  src="./images/img2.jpg"
-                  alt="Жінка, блондинка в чорномі піджаку і окулярах, посміхається"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/frontend-developer-mobile.jpg    1x,
+                      ./images/frontend-developer-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/frontend-developer-desktop.jpg"
+                    alt="Жінка, блондинка в чорномі піджаку і окулярах, посміхається"
+                  />
+                </picture>
                 <div class="employee-card__container">
                   <h3 class="employee-card__title">Ольга Рєпіна</h3>
                   <p lang="en" class="employee-card__text">Frontend Developer</p>
@@ -229,13 +256,18 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <div class="employee-card">
-                <img
-                  src="./images/img3.jpg"
-                  alt="Усміхнений чоловік у світлій сорочці"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="./images/marketing-mobile.jpg 1x, ./images/marketing-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/marketing-desktop.jpg"
+                    alt="Усміхнений чоловік у світлій сорочці"
+                  />
+                </picture>
                 <div class="employee-card__container">
                   <h3 class="employee-card__title">Микола Тарасов</h3>
                   <p lang="en" class="employee-card__text">Marketing</p>
@@ -272,13 +304,21 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <div class="employee-card">
-                <img
-                  src="./images/img4.jpg"
-                  alt="Усміхнений молодий чоловік в окулярах і чорній футболці"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/ui-designer-mobile.jpg    1x,
+                      ./images/ui-designer-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/ui-designer-desktop.jpg"
+                    alt="Усміхнений молодий чоловік в окулярах і чорній футболці"
+                  />
+                </picture>
                 <div class="employee-card__container">
                   <h3 class="employee-card__title">Михайло Єрмаков</h3>
                   <p lang="en" class="employee-card__text">UI Designer</p>
@@ -400,7 +440,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer__social-container">
           <p class="footer__social-text">Приєднуйтесь</p>
           <ul class="social">
             <li class="social__item">
@@ -457,7 +497,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-modal-btn modal__close-modal-btn" data-modal-close>
+        <button type="button" class="modal__close-modal-btn close-modal-btn" data-modal-close>
           <svg class="close-modal-btn__icon" width="18" height="18">
             <use class="close-modal-icon" href="./images/icons.svg#icon-close-modal-button"></use>
           </svg>
@@ -505,7 +545,7 @@
             <svg width="16" height="15" class="contact-form__checkbox-icon">
               <use href="./images/icons.svg#icon-checkbox"></use>
             </svg>
-            <span>Погоджуюся з розсилкою та приймаю</span>
+            <span class="contact-form__checkbox-text">Погоджуюся з розсилкою та приймаю</span>
             <a href="" class="contact-form__checkbox-link">Умови договору</a>
           </label>
 
@@ -513,6 +553,59 @@
         </form>
       </div>
     </div>
-    <script src="./modal.js"></script>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="container mobile-menu__container">
+        <button type="button" class="mobile-menu__close-button js-close-menu">
+          <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-item">
+              <a href="./index.html" class="mobile-menu__nav-link mobile-menu__nav-link--current">
+                Студія
+              </a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="./portfolio.html" class="mobile-menu__nav-link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__contact-social-wrap">
+          <ul class="mobile-menu__contact">
+            <li class="mobile-menu__contact-item">
+              <a href="tel:+380961111111" class="mobile-menu__contact-link"> +38 096 111 11 11 </a>
+            </li>
+            <li class="mobile-menu__contact-item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social">
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

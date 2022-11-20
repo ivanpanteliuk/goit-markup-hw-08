@@ -3,8 +3,10 @@
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header__nav {
@@ -17,18 +19,47 @@
     margin-right: 93px;
 }
 
+.header__burger-menu {
+
+    margin-left: auto;
+    padding: 0;
+
+    border: none;
+    background-color: $white-color;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
 .header__contacts {
     @extend %ul;
-    display: flex;
+    display: none;
     margin-left: auto;
     
     font-weight: 500;
     line-height: 1.428;
     letter-spacing: 0.02em;
+
+    @media (min-width: 768px) {
+        display: block
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        
+    }
 }
 
 .header__item:not(:last-child) {
-    margin-right: 50px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
+    
+    @media (min-width: 1200px) { 
+        margin-right: 50px;
+    }
 }
 
 
