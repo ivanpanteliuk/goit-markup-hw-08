@@ -15,9 +15,13 @@
 .team__list {
     @extend %ul;
 
-    // display: flex;
-    // flex-basis: calc((100% - 90px) / 4);
-    // gap: 30px;
+    gap: 30px;
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .team__item {
@@ -26,6 +30,14 @@
         &:not(:last-child) {
             margin-bottom: 30px;    
         }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
     }
 }
 

@@ -118,6 +118,7 @@
           <ul class="services__list">
             <li class="services__item">
               <img
+                srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
                 src="./images/box1.jpg"
                 alt="Чиїсь руки друкують текст на планшеті"
                 width="370"
@@ -128,6 +129,7 @@
             </li>
             <li class="services__item">
               <img
+                srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
                 src="./images/box2.jpg"
                 alt="Спеціаліст тримає в руках телефон одночасно працюючи за ноутбуком"
                 width="370"
@@ -138,6 +140,7 @@
             </li>
             <li class="services__item">
               <img
+                srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
                 src="./images/box3.jpg"
                 alt="Чиїсь руки малюють малюнок на планшеті"
                 width="370"
@@ -163,7 +166,20 @@
                     "
                     media="(max-width: 767px)"
                   />
-
+                  <source
+                    srcset="
+                      ./images/product-designer-tablet.jpg    1x,
+                      ./images/product-designer-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/product-designer-desktop.jpg    1x,
+                      ./images/product-designer-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
                   <img
                     src="./images/product-designer-desktop.jpg"
                     alt="Бородатий чоловік в бордовій сорочці і окулярах посміхається"
@@ -215,6 +231,20 @@
                     "
                     media="(max-width: 767px)"
                   />
+                  <source
+                    srcset="
+                      ./images/frontend-developer-tablet.jpg    1x,
+                      ./images/frontend-developer-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/frontend-developer-desktop.jpg    1x,
+                      ./images/frontend-developer-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
                   <img
                     src="./images/frontend-developer-desktop.jpg"
                     alt="Жінка, блондинка в чорномі піджаку і окулярах, посміхається"
@@ -262,6 +292,14 @@
                   <source
                     srcset="./images/marketing-mobile.jpg 1x, ./images/marketing-mobile@2x.jpg 2x"
                     media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/marketing-tablet.jpg 1x, ./images/marketing-tablet@2x.jpg 2x"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="./images/marketing-desktop.jpg 1x, ./images/marketing-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
                   />
                   <img
                     src="./images/marketing-desktop.jpg"
@@ -313,6 +351,20 @@
                       ./images/ui-designer-mobile@2x.jpg 2x
                     "
                     media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ui-designer-tablet.jpg    1x,
+                      ./images/ui-designer-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ui-designer-desktop.jpg    1x,
+                      ./images/ui-designer-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
                   />
                   <img
                     src="./images/ui-designer-desktop.jpg"
@@ -410,68 +462,70 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div>
-          <a href="./index.html" lang="en" class="logo footer__logo"
-            >Web<span class="logo__text logo__text--inverted">Studio</span></a
-          >
-          <address class="footer__address">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a
-                  href="https://goo.gl/maps/Zqt3n5UAzLX8HAbS8"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="footer__link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__wrap">
+          <div>
+            <a href="./index.html" lang="en" class="logo footer__logo"
+              >Web<span class="logo__text logo__text--inverted">Studio</span></a
+            >
+            <address class="footer__address">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    href="https://goo.gl/maps/Zqt3n5UAzLX8HAbS8"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="footer__link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contact-link contact-link--colored-line-tall"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380961111111" class="contact-link contact-link--colored-line-tall"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__social-container">
+            <p class="footer__social-text">Приєднуйтесь</p>
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link social__link--bg-colored">
+                  <svg class="social__icon social__icon--colored" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="contact-link contact-link--colored-line-tall"
-                  >info@devstudio.com</a
-                >
+              <li class="social__item">
+                <a href="" class="social__link social__link--bg-colored">
+                  <svg class="social__icon social__icon--colored" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a href="tel:+380961111111" class="contact-link contact-link--colored-line-tall"
-                  >+38 096 111 11 11</a
-                >
+              <li class="social__item">
+                <a href="" class="social__link social__link--bg-colored">
+                  <svg class="social__icon social__icon--colored" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link social__link--bg-colored">
+                  <svg class="social__icon social__icon--colored" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__social-container">
-          <p class="footer__social-text">Приєднуйтесь</p>
-          <ul class="social">
-            <li class="social__item">
-              <a href="" class="social__link social__link--bg-colored">
-                <svg class="social__icon social__icon--colored" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--bg-colored">
-                <svg class="social__icon social__icon--colored" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--bg-colored">
-                <svg class="social__icon social__icon--colored" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--bg-colored">
-                <svg class="social__icon social__icon--colored" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div>
           <p class="subscribe__text">Підпишіться на розсилку</p>
@@ -545,7 +599,7 @@
             <svg width="16" height="15" class="contact-form__checkbox-icon">
               <use href="./images/icons.svg#icon-checkbox"></use>
             </svg>
-            <span class="contact-form__checkbox-text">Погоджуюся з розсилкою та приймаю</span>
+            <span>Погоджуюся з розсилкою та приймаю</span>
             <a href="" class="contact-form__checkbox-link">Умови договору</a>
           </label>
 
@@ -576,32 +630,30 @@
             </li>
           </ul>
         </nav>
-        <div class="mobile-menu__contact-social-wrap">
-          <ul class="mobile-menu__contact">
-            <li class="mobile-menu__contact-item">
-              <a href="tel:+380961111111" class="mobile-menu__contact-link"> +38 096 111 11 11 </a>
-            </li>
-            <li class="mobile-menu__contact-item">
-              <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="mobile-menu__social">
-            <li class="mobile-menu__social-item">
-              <a href="" class="mobile-menu__social-link">Instagram</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="" class="mobile-menu__social-link">Twitter</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="" class="mobile-menu__social-link">Facebook</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="" class="mobile-menu__social-link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="mobile-menu__contact">
+          <li class="mobile-menu__contact-item">
+            <a href="tel:+380961111111" class="mobile-menu__contact-link"> +38 096 111 11 11 </a>
+          </li>
+          <li class="mobile-menu__contact-item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__social">
+          <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
 
