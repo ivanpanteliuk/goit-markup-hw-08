@@ -58,6 +58,10 @@
     text-transform: uppercase;
     color: $title-text-color;
     line-height: 1.1428;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .benefits__text {
